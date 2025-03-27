@@ -552,6 +552,8 @@ if uploaded_file is not None:
                 st.warning("Please select both dependent and independent variables.")
         else:
             st.error("No numeric columns found in the dataset.")
+            st.markdown("<hr><center><small>This app created by Dr Merwan Roudane</small></center>", unsafe_allow_html=True)
+
     except Exception as e:
         st.error(f"Error: {str(e)}")
 else:
